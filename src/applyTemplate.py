@@ -48,6 +48,7 @@ def applyPageTemplate():
 			name = orderName(filename2keyword(file))
 			content = template.replace('{{content}}', content)
 			content = content.replace('{{name}}', name)
+			content = content.replace('{{filename}}', file)
 			content = content.replace('{{category}}', cat)
 			
 			if testing:
